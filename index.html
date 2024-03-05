@@ -15,19 +15,22 @@
             min-height: 95vh;
         }
 
-        header {
-            width: 100%;
+        header{
+
             text-align: center;
-            font-family:cursive;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: maroon;
-            
-            overflow: visible;
-            white-space: nowrap;
-            width: fit-content;
+
+             /* overflow: visible; */
+            /* white-space: nowrap; */
+            /* width: fit-content; */
             /* Set width to fit content */
             animation: slide-in 1.5s ease-in-out forwards;
-            /* Animation properties */
-            
+           
+
+        }
+        header div{
+            text-align: center;
         }
 
         section img {
@@ -35,22 +38,25 @@
             object-fit: cover;
         }
 
-        article div div{
+        article div div {
 
             display: inline-block;
             margin: 20px;
             padding: 30px;
         }
-        .title{
+
+        .title {
             width: 40%;
             font-family: quicksand;
             font-weight: 700;
             font-size: 1.3em;
-            
+
         }
-        .title img{
+
+        .title img {
             width: 100%;
         }
+
         @keyframes slide-in {
             from {
                 transform: translateX(-100%);
@@ -61,16 +67,23 @@
                 transform: translateX(0);
             }
 
-            /* Text animates to its original position */}
+            /* Text animates to its original position */
+        }
+
         @media (max-width:600px) {
-            .title{
+            .title {
                 width: 100%;
                 text-align: justify;
-                margin: 50px 0px 0px -30px ;
+                margin: 50px 0px 0px -30px;
             }
-            .title img{
+
+            .title img {
                 padding: 20px 0px;
 
+            }
+
+            h1 {
+                width: 100%;
             }
         }
     </style>
@@ -78,10 +91,15 @@
 
 <body>
     <header>
-        <h1> Save Earth
-        </h1>
-        <h2>
-            "Protecting Tomorrow, Today."</h2>
+        <div>
+
+            <h1>
+                 Save Earth
+            </h1>
+            <h2>
+                "Protecting Tomorrow, Today."
+            </h2>
+        </div>
     </header>
     <section>
         <img src="https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg" alt="twig">
@@ -107,10 +125,9 @@
                     src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="river">
                 <span>
-                    Rivers sustain life, yet face threats from pollution and overuse. We must protect them for clean
-                    water,
-                    biodiversity, and thriving ecosystems. Let's unite to safeguard our rivers for a sustainable future.
-                </span>
+                    Saving rivers is crucial for sustaining life as they provide clean water, support biodiversity, and
+                    maintain healthy ecosystems. Protecting rivers from pollution and overuse ensures a sustainable
+                    future for both humans and wildlife, safeguarding a vital resource for generations to come.</span>
             </div>
 
 
