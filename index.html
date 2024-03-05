@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 50px 50px 0 50px;
+            background-color: #faf9f6;
+            display: flex;
+            flex-direction: column;
+            min-height: 95vh;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            font-family:cursive;
+            color: maroon;
+            
+            overflow: visible;
+            white-space: nowrap;
+            width: fit-content;
+            /* Set width to fit content */
+            animation: slide-in 1.5s ease-in-out forwards;
+            /* Animation properties */
+            
+        }
+
+        section img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        article div div{
+
+            display: inline-block;
+            margin: 20px;
+            padding: 30px;
+        }
+        .title{
+            width: 40%;
+            font-family: quicksand;
+            font-weight: 700;
+            font-size: 1.3em;
+            
+        }
+        .title img{
+            width: 100%;
+        }
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+            }
+
+            /* Text starts from off-screen to the left */
+            to {
+                transform: translateX(0);
+            }
+
+            /* Text animates to its original position */}
+        @media (max-width:600px) {
+            .title{
+                width: 100%;
+                text-align: justify;
+                margin: 50px 0px 0px -30px ;
+            }
+            .title img{
+                padding: 20px 0px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Save Earth
+        </h1>
+        <h2>
+            "Protecting Tomorrow, Today."</h2>
+    </header>
+    <section>
+        <img src="https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg" alt="twig">
+    </section>
+    <article>
+        <div>
+            <div class="title">
+                <img class="forest"
+                    src="https://images.pexels.com/photos/1424239/pexels-photo-1424239.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="background-image ">
+                <span>
+                    Forests are the lungs of our planet, providing vital oxygen and serving as homes to countless
+                    species.
+                    By
+                    conserving and replenishing our forests, we safeguard biodiversity, mitigate climate change, and
+                    ensure
+                    a
+                    sustainable future for generations to come. Join us in preserving our forests today.
+                </span>
+            </div>
+            <div class="title">
+                <img class="river"
+                    src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="river">
+                <span>
+                    Rivers sustain life, yet face threats from pollution and overuse. We must protect them for clean
+                    water,
+                    biodiversity, and thriving ecosystems. Let's unite to safeguard our rivers for a sustainable future.
+                </span>
+            </div>
+
+
+    </article>
+
+</body>
+
+</html>
